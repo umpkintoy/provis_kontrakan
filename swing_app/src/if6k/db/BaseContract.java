@@ -13,4 +13,5 @@ import java.util.List;
  */
 public interface BaseContract {
     public void onDataLoaded(List<Object[]> data);
+    public void showMessage(String message);
 }

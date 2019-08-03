@@ -11,10 +11,10 @@ import if6k.db.BaseContract;
  *
  * @author shancheas
  */
-public abstract class BaseController {
-    protected BaseContract mContract;
+public abstract class BaseController<C extends BaseContract> {
+    protected C mContract;
     
-    public BaseController(BaseContract contract) {
+    public BaseController(C contract) {
         mContract = contract;
     }
 }

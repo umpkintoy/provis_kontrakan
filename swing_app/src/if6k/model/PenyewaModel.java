@@ -27,12 +27,12 @@ public class PenyewaModel extends BaseConnection{
             ResultSet results = getAll();
             while (results.next()) {
                 data.add(new Object[]{
-                    results.getString(2),
-                    results.getString(1),
                     results.getString(3),
+                    results.getString(2),
                     results.getString(4),
                     results.getString(5),
-                    "",
+                    results.getString(6),
+                    "Test",
                 });
             }
             return data;
